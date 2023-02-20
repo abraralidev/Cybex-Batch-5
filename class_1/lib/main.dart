@@ -12,16 +12,37 @@
 
 import 'package:flutter/material.dart';
 
+//========================Main Function=====================================
 void main() {
   runApp(const MyApp());
 }
+//=============================================================
 
 // if you want change the name of the class press F2
+//===========================Main Class IN which you will use MaterialApp(Important for first ) ==================================
 class MyApp extends StatelessWidget {
+  // Constructor
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const MaterialApp(
+      title: 'Class 1',
+      debugShowCheckedModeBanner: false,
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatelessWidget {
+  const Home({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }
