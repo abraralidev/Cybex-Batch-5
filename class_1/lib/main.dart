@@ -45,4 +45,10 @@ class Home extends StatelessWidget {
       appBar: AppBar(),
     );
   }
+  
 }
+
+
+// materialApp (Done)
+// Scaffold (Done)
+// AppBar (Done)
