@@ -122,6 +122,11 @@ class Home extends StatelessWidget {
 
 // materialApp (Done)
 // Scaffold (Done)
+// - backgroundColor (Done)
+// - Appbar (Done)
+// - Drawer (Done)
+// - body (Done) 
+ 
 
 // Text (Done)
 // Icon (Done)
@@ -131,4 +136,14 @@ class Home extends StatelessWidget {
 // - leading (Done)
 // - title (Done)
 // - actions (Done)
+// drawer (Done)
+// center (Done)
+// container (Done)
+// - width (Done)
+// - height (Done)
+// - color (Done)
+// - decoration (Done)
+//   - BoxDecoration (Done)
+//      - color (Done)
+//      - border radius (Done)
 // here the - symbol is added for understand that are properties of the widgets
