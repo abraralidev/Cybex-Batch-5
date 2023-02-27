@@ -27,9 +27,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Class 3',
+      title: 'Class 4',
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Home2(),
     );
   }
 }
@@ -60,7 +60,7 @@ class Home extends StatelessWidget {
 //=================================== Title =================================================
 // step 1: Here we call the title property
 // step 2: then call the Text widget
-        title: const Text('Class 3'),
+        title: const Text('Class 4'),
 //=================================== Actions for calling multiple widget Because it use Array =================================================
         actions: const [
           // step 1: if you want to call multiple widget then call the actions property
@@ -103,18 +103,94 @@ class Home extends StatelessWidget {
 // Step 2: call the property of height for size
 // Step 3: call the property of decoration for style
 // Step 4: call the property of decoration for style then call  BoxDecoration in decoration property
-          width: 200,
-          height: 200,
+          width: 100,
+          height: 100,
           // color: Colors.red,
           decoration: BoxDecoration(
 // tips: if you call the color property outside the BoxDecoration it will show an error
             color: Colors.red,
-// here we call the borderRadius for style the box edge          
+// here we call the borderRadius for style the box edge
             borderRadius: BorderRadius.circular(30),
           ),
-// here we call the child property for adding the text widget          
-          child: const Text('Hello World'),
+// here we call the child property for adding the text widget
+          child: const Center(
+              child: Text(
+            'Hello World',
+// here we call the style property for adding the text style
+            style: TextStyle(
+                // Font color
+                color: Colors.white,
+                // Font Size
+                fontSize: 30,
+                // Font Bold
+                fontWeight: FontWeight.bold),
+          )),
         ),
+      ),
+    );
+  }
+}
+
+// here we make a class for using Row and Column widget
+class Home2 extends StatelessWidget {
+  const Home2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Class 4"),
+       //  elevation is use for shadow
+        elevation: 10,
+      ),
+      body: Center(
+        // here we call a Column widget for adding multiple widget in one place
+        child: Column(
+            // here we call a crossAxisAlignment property for align multiple widgets
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+// ==================================Container 1==========================================
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.red,
+              ),
+// ==================================Container 2==========================================
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.blue,
+              ),
+// ==================================Container 3==========================================
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.blueGrey,
+              ),
+              // here we call a Row widget for adding multiple widget in one place
+              Row(
+                children: [
+// ==================================Container 1==========================================
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.red,
+                  ),
+// ==================================Container 2==========================================
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.blue,
+                  ),
+// ==================================Container 3==========================================
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.blueGrey,
+                  ),
+                ],
+              )
+            ]),
       ),
     );
   }
@@ -122,11 +198,6 @@ class Home extends StatelessWidget {
 
 // materialApp (Done)
 // Scaffold (Done)
-// - backgroundColor (Done)
-// - Appbar (Done)
-// - Drawer (Done)
-// - body (Done) 
- 
 
 // Text (Done)
 // Icon (Done)
@@ -136,15 +207,13 @@ class Home extends StatelessWidget {
 // - leading (Done)
 // - title (Done)
 // - actions (Done)
-// drawer (Done)
-// center (Done)
-// container (Done)
-// - width (Done)
-// - height (Done)
-// - color (Done)
-// - decoration (Done)
-//   - BoxDecoration (Done)
-//      - color (Done)
-//      - border radius (Done)
-// here the - symbol is added for understand that are properties of the widgets
+// - centerTitle (Done)
+// - elevation (Done)
+// Row
+// - mainAxisAlignment (Done)
+// - crossAxisAlignment (Done)
+// Column
+// - mainAxisAlignment (Done)
+// - crossAxisAlignment (Done)
 
+// here the - symbol is added for understand that are properties of the widgets

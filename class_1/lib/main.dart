@@ -10,10 +10,10 @@
 // 1. Do not maintain state.
 // 2. Receive arguments from their parent, which they use to derive their current configuration.
 
+//========================Main Function=====================================
 import 'package:flutter/material.dart';
 
-//========================Main Function=====================================
-void main() {
+void main(List<String> args) {
   runApp(const MyApp());
 }
 //=============================================================
@@ -21,31 +21,28 @@ void main() {
 // if you want change the name of the class press F2
 //===========================Main Class IN which you will use MaterialApp(Important for first ) ==================================
 class MyApp extends StatelessWidget {
-  // Constructor
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Class 1',
-      debugShowCheckedModeBanner: false,
       home: Home(),
     );
   }
 }
 
 class Home extends StatelessWidget {
-  const Home({
-    super.key,
-  });
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('Class 1'),
+      ),
     );
   }
-  
 }
 
 
