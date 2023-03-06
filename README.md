@@ -62,7 +62,7 @@
 - - drawer widget
 - - floatingactionbutton widget
 
-## [Class 6 Topics](https://github.com/abraralidev/Cybex-Batch-5/blob/main/class_6/lib/main.dart)
+## [Class 6 Topics](https://github.com/abraralidev/Cybex-Batch-5/blob/main/class_6/lib/screens/home.dart)
 
 - How to make & use separate dart file 
 - image.asset widget
