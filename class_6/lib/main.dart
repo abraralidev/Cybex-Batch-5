@@ -10,6 +10,7 @@
 // 1. Do not maintain state.
 // 2. Receive arguments from their parent, which they use to derive their current configuration.
 
+import 'package:class_6/screens/home.dart';
 import 'package:flutter/material.dart';
 
 //========================Main Function=====================================
@@ -27,16 +28,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Class 5',
+      title: 'Class 6',
       debugShowCheckedModeBanner: false,
-      home: Home3(),
+      home: Home(),
     );
   }
 }
 
 //=================================================Class 1,2,3 work=======================================================================
-class Home extends StatelessWidget {
-  const Home({
+class Home1 extends StatelessWidget {
+  const Home1({
     super.key,
   });
 
@@ -61,7 +62,7 @@ class Home extends StatelessWidget {
 //=================================== Title =================================================
 // step 1: Here we call the title property
 // step 2: then call the Text widget
-        title: const Text('Class 5'),
+        title: const Text('Class 6'),
 //=================================== Actions for calling multiple widget Because it use Array =================================================
         actions: const [
           // step 1: if you want to call multiple widget then call the actions property
@@ -141,7 +142,7 @@ class Home2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Class 5"),
+        title: const Text("Class 6"),
         //  elevation is use for shadow
         elevation: 10,
       ),
@@ -191,7 +192,8 @@ class Home2 extends StatelessWidget {
                     color: Colors.blueGrey,
                   ),
                 ],
-              )
+              ),
+              
             ]),
       ),
     );
@@ -206,7 +208,7 @@ class Home3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Class 5"),
+        title: const Text("Class 6"),
       ),
       drawer: const Drawer(),
 // here we make a bottom right conner button like whatsapp with help of FloatingActionButton widget
@@ -225,14 +227,14 @@ class Home3 extends StatelessWidget {
             ),
 // here we make a image with help of Image widget
             Container(
-                width: 150,
-                height: 150,
+                width: 160,
+                height: 160,
                 color: Colors.amber,
 // here we call a network image
 // Network Image : the image is source from internet without download
                 child: Image.network(
                     fit: BoxFit.cover,
-                    'https://images.unsplash.com/photo-1562155847-c05f7386b204?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3JTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80'))
+                    'https://images.unsplash.com/photo-1662166847-c06f7386b204?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3JTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80'))
           ],
         ),
       ),
