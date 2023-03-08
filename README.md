@@ -68,6 +68,11 @@
 - image.asset widget
 - Expanded widget
 
+## [Class 7 Topics](https://github.com/abraralidev/Cybex-Batch-5/blob/main/class_7/lib/screens/home.dart)
 
-
+- Stack
+- - alignment
+- SingleChildScrollView
+- - scrollDirection
+- sizedbox
 
