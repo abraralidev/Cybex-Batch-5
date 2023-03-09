@@ -76,3 +76,17 @@
 - - scrollDirection
 - sizedbox
 
+## [Class 8 Topics](https://github.com/abraralidev/Cybex-Batch-5/blob/main/class_8/lib/screens/home.dart)
+
+- drawer
+- - ListView
+- - DrawerHeader
+- ListTile
+- - leading
+- - title
+- - onTap
+- - trailing
+- - tileColor
+- CircleAvatar
+- - backgroundImage
+- - radius
