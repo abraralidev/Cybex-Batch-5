@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
               onTap: () {},
             ),
             ListTile(
-              leading: const Icon(Icons.shopping_bag),
+              leading: const Icon(Icons.shopping_cart),
               title: const Text('Cart'),
               subtitle: const Text('Go to Cart Screen'),
               trailing: const Icon(Icons.arrow_forward_ios_rounded),
