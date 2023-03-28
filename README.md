@@ -90,3 +90,12 @@
 - CircleAvatar
 - - backgroundImage
 - - radius
+
+## [Class 9 Topics](https://github.com/abraralidev/Cybex-Batch-5/blob/main/class_9/lib/screen/home.dart)
+
+- Navigator 
+- Navigator.push
+- Navigator.pushreplacement
+- MaterialPageRoute (For Next Screen)
+- Counter App with StatefullWidget
+- Bottom NavBar
