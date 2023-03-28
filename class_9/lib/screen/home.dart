@@ -10,7 +10,7 @@ class Home extends StatefulWidget {
   @override
   State<Home> createState() => _HomeState();
 }
-
+// ========================== Here the Variable of counter ==================================
 int counter = 0;
 
 class _HomeState extends State<Home> {
@@ -34,6 +34,8 @@ class _HomeState extends State<Home> {
           // Button No 1
           FloatingActionButton(
             onPressed: () {
+       // Setstate function is only use in Statefullwidget   
+       // (It is use to update the UI )
               setState(() {
                 counter++;
               });
@@ -46,6 +48,8 @@ class _HomeState extends State<Home> {
           // Button No 2
           FloatingActionButton(
             onPressed: () {
+        // Setstate function is only use in Statefullwidget     
+        // (It is use to update the UI ) 
               setState(() {
                 counter--;
               });
@@ -58,13 +62,17 @@ class _HomeState extends State<Home> {
           ),
           FloatingActionButton(
             onPressed: () {
+   // ===================================================Navigator===================================================                 
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const NextPage()));
+//                             Navigator.pushReplacement(context,
+//                   MaterialPageRoute(builder: (context) => const NextPage()));
             },
             child: const Icon(Icons.arrow_forward_ios),
           ),
         ],
       ),
+   // ================================================BottomNavBar======================================================   
       bottomNavigationBar: BottomNavigationBar(items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
