@@ -59,6 +59,23 @@ class Home extends StatelessWidget {
                 );
               },
             ),
+
+            // ListView.builder(
+            //   itemCount: namelist.length,
+            //   shrinkWrap: true,
+            //   itemBuilder: (BuildContext context, int index) {
+            //     return Card(
+            //       elevation: 5,
+            //       child: ListTile(
+            //         leading: const CircleAvatar(),
+            //         title: Text(namelist[index]),
+            //         subtitle: Text(msglist[index]),
+            //         trailing: const Text("12:30 AM"),
+            //         tileColor: Colors.white,
+            //       ),
+            //     );
+            //   },
+            // ),
           ],
         ),
       ),
